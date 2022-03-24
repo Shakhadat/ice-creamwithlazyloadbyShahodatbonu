@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
+$robfont: "Roboto", sans-serif;
+$bgbtn: rgba(214, 67, 116, 1);
+$hindu: "Hind Madurai", sans-serif;
+@mixin btn($width, $height) {
+  background-color: $bgbtn;
+  font-size: 16px;
+  color: rgba(250, 250, 250, 1);
+  line-height: 18.75px;
+  font-family: $robfont;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 5px;
+  width: $width;
+  height: $height;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: rgba(214, 67, 116, 0.4);
+    color: black;
+  }
+}
+@mixin fonttiny($font-size, $font-weight, $lineh, $color) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $lineh;
+  font-family: $robfont;
+  font-style: normal;
+  color: $color;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  background-color: rgba(242, 206, 218, 0.3);
+  width: 100%;
+  height: 862px;
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    #logo {
+      width: 79px;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0 20px;
+        a {
+          @include fonttiny(15px, 400, 16.41px, rgba(21, 1, 1, 1));
+          text-decoration: none;
+
+          &:hover {
+            color: $bgbtn;
+          }
+        }
+      }
+    }
+    button {
+      @include btn(165px, 49px);
+    }
+  }
+  .headcontent {
+    position: relative;
+    top: 150px;
+    width: 670px;
+    height: 500px;
+    // background-color: red;
+    h4 {
+      @include fonttiny(14px, 500, 16.41px, rgba(15, 1, 1, 1));
+      letter-spacing: 0.1em;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      @include fonttiny(57.33px, 700, 69.08px, rgba(15, 1, 1, 0.9));
+      font-family: "Fredoka One", cursive;
+      margin: 0;
+      padding: 0;
+      width: 680px;
+      height: 130px;
+      span {
+        color: rgba(214, 67, 116, 0.9);
+        margin: 0;
+        padding: 0;
+      }
+    }
+    p {
+      font-size: 18px;
+      font-family: $hindu;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 27px;
+      color: rgba(15, 1, 1, 0.6);
+      width: 523px;
+      // height: 28px;
+      margin: 35px 0;
+      padding: 0;
+      // margin-top: 35px;
+    }
+    button {
+      @include btn(165px, 49px);
+    }
+  }
+  .headimg {
+    position: relative;
+    width: 597px;
+    height: 597px;
+    // background-color: rebeccapurple;
+    .round {
+      width: 365px;
+      height: 353px;
+      background-color: rgba(210, 49, 102, 0.1);
+      border-radius: 50%;
+      position: absolute;
+      top: 250px;
+      left: 100px;
+    }
+    #head--ice {
+      position: absolute;
+      width: 597px;
+    }
+    #sut {
+      position: absolute;
+      z-index: 1;
+      width: 521px;
+      bottom: -65px;
+      left: 25px;
+      height: 428.26px;
+    }
+  }
+}
+// section 2;
+
+.section--2 {
+  height: 410px;
+  width: 100%;
+  .groupcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .card {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+      text-align: center;
+      padding: 26px;
+      h2 {
+        font-family: $hindu;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 27.6px;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 1);
+      }
+      p {
+        font-family: $hindu;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 19.32px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+  }
+}
+.section--3 {
+  background-color: rgba(248, 237, 240, 1);
+  .textcontent {
+    width: 450px;
+    h3 {
+      font-family: $hindu;
+      font-size: 44.2px;
+      font-weight: 600;
+      line-height: 48.84px;
+      color: rgba(21, 1, 1, 1);
+      width: 349px;
+    }
+    p {
+      @include fonttiny(16px, 400, 24px, rgba(21, 1, 1, 0.6));
+    }
+    button {
+      @include btn(165px, 49.13px);
+    }
+  }
+}
+.section--4 {
+  width: 100%;
+  background-color: white;
+  height: 290px;
+
+  h2 {
+    font-family: $hindu;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 44.2px;
+    line-height: 61px;
+    color: rgba(21, 1, 1, 1);
+    height: 61px;
+    text-align: center;
+  }
+  .pruductMenu {
+    text-align: center;
+    position: relative;
+    margin: 0 50px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 1000px;
+
+    li {
+      @include fonttiny(18px, 500, 21.09px, rgba(0, 0, 0, 0.6));
+      margin: 20px;
+      &:hover {
+        color: rgba(0, 0, 0, 1);
+        border-bottom: 2px solid $bgbtn;
+      }
+    }
+  }
+}
+.section--5 {
+  width: 100%;
+}
+.textcontent2 {
+  text-align: left;
+  h4 {
+    font-family: $hindu;
+    font-size: 26px;
+    line-height: 35.88px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 1);
+    // width: 152px;
+    margin: 0;
+    padding: 0;
+  }
+  p {
+    @include fonttiny(16px, 400, 24px, rgba(0, 0, 0, 0.7));
+    margin: 0;
+    padding: 0;
+    width: 454px;
+  }
+  h3 {
+    font-family: $hindu;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35.88px;
+    font-style: normal;
+    color: rgba(0, 0, 0, 1);
+    del {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 20px;
+      line-height: 27.6px;
+    }
+  }
+  button {
+    @include btn(165px, 49px);
+  }
+}
+// tab- bn ishlash
+.tabcontent {
+  width: 50%;
+  // background-color: aqua;
+  height: 500px;
+}
+.tab-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  .operations__icon {
+    img {
+      width: 59px;
+    }
+  }
+  .operations__header {
+    @include fonttiny(24px, 500, 28.13px, rgba(0, 0, 0, 1));
+    margin: 0;
+    padding: 0;
+    span {
+      @include fonttiny(12px, 500, 14.06px, rgba(0, 0, 0, 0.7));
+    }
+  }
+}
+.operations__content {
+  display: none;
+  p {
+    @include fonttiny(16px, 400, 24px, rgba(0, 0, 0, 0.7));
+    width: 322px;
+    padding: 10px;
+  }
+}
+
+// .operations__tab--active {
+//   transform: translateY(-66%);
+// }
+
+.operations__content--active {
+  display: block;
+}
+.OPER_ {
+  display: flex;
+}
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s;
+}
+
+.modal__header {
+  font-size: 28px;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+  font-family: $hindu;
+}
+
+.modal__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: $hindu;
+}
+
+.modal__form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: $hindu;
+}
+
+.modal__form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-family: $hindu;
+}
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+  font-family: $hindu;
+}
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.section {
+  transition: all 2s ease-in-out;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+.btn {
+  @include btn(169px, 49px);
+}
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+.row{
+  img {
+    transition: filter 0.5s;
+  }
+  
+  .lazy-img {
+    filter: blur(20px);
+  }
+}

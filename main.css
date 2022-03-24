@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 0; }
+
+.container {
+  width: 1200px;
+  margin: 0 auto; }
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.header {
+  background-color: rgba(242, 206, 218, 0.3);
+  width: 100%;
+  height: 862px; }
+  .header #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px; }
+    .header #navbar #logo {
+      width: 79px; }
+    .header #navbar ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0; }
+      .header #navbar ul li {
+        margin: 0 20px; }
+        .header #navbar ul li a {
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 16.41px;
+          font-family: "Roboto", sans-serif;
+          font-style: normal;
+          color: #150101;
+          text-decoration: none; }
+          .header #navbar ul li a:hover {
+            color: #d64374; }
+    .header #navbar button {
+      background-color: #d64374;
+      font-size: 16px;
+      color: #fafafa;
+      line-height: 18.75px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      border-radius: 5px;
+      width: 165px;
+      height: 49px;
+      border: none;
+      outline: none; }
+      .header #navbar button:hover {
+        background-color: rgba(214, 67, 116, 0.4);
+        color: black; }
+  .header .headcontent {
+    position: relative;
+    top: 150px;
+    width: 670px;
+    height: 500px; }
+    .header .headcontent h4 {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16.41px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      color: #0f0101;
+      letter-spacing: 0.1em;
+      margin: 0;
+      padding: 0; }
+    .header .headcontent h1 {
+      font-size: 57.33px;
+      font-weight: 700;
+      line-height: 69.08px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      color: rgba(15, 1, 1, 0.9);
+      font-family: "Fredoka One", cursive;
+      margin: 0;
+      padding: 0;
+      width: 680px;
+      height: 130px; }
+      .header .headcontent h1 span {
+        color: rgba(214, 67, 116, 0.9);
+        margin: 0;
+        padding: 0; }
+    .header .headcontent p {
+      font-size: 18px;
+      font-family: "Hind Madurai", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      line-height: 27px;
+      color: rgba(15, 1, 1, 0.6);
+      width: 523px;
+      margin: 35px 0;
+      padding: 0; }
+    .header .headcontent button {
+      background-color: #d64374;
+      font-size: 16px;
+      color: #fafafa;
+      line-height: 18.75px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      border-radius: 5px;
+      width: 165px;
+      height: 49px;
+      border: none;
+      outline: none; }
+      .header .headcontent button:hover {
+        background-color: rgba(214, 67, 116, 0.4);
+        color: black; }
+  .header .headimg {
+    position: relative;
+    width: 597px;
+    height: 597px; }
+    .header .headimg .round {
+      width: 365px;
+      height: 353px;
+      background-color: rgba(210, 49, 102, 0.1);
+      border-radius: 50%;
+      position: absolute;
+      top: 250px;
+      left: 100px; }
+    .header .headimg #head--ice {
+      position: absolute;
+      width: 597px; }
+    .header .headimg #sut {
+      position: absolute;
+      z-index: 1;
+      width: 521px;
+      bottom: -65px;
+      left: 25px;
+      height: 428.26px; }
+
+.section--2 {
+  height: 410px;
+  width: 100%; }
+  .section--2 .groupcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .section--2 .groupcard .card {
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.03);
+      text-align: center;
+      padding: 26px; }
+      .section--2 .groupcard .card h2 {
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        line-height: 27.6px;
+        font-weight: 600;
+        color: black; }
+      .section--2 .groupcard .card p {
+        font-family: "Hind Madurai", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        line-height: 19.32px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.6); }
+
+.section--3 {
+  background-color: #f8edf0; }
+  .section--3 .textcontent {
+    width: 450px; }
+    .section--3 .textcontent h3 {
+      font-family: "Hind Madurai", sans-serif;
+      font-size: 44.2px;
+      font-weight: 600;
+      line-height: 48.84px;
+      color: #150101;
+      width: 349px; }
+    .section--3 .textcontent p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      color: rgba(21, 1, 1, 0.6); }
+    .section--3 .textcontent button {
+      background-color: #d64374;
+      font-size: 16px;
+      color: #fafafa;
+      line-height: 18.75px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      border-radius: 5px;
+      width: 165px;
+      height: 49.13px;
+      border: none;
+      outline: none; }
+      .section--3 .textcontent button:hover {
+        background-color: rgba(214, 67, 116, 0.4);
+        color: black; }
+
+.section--4 {
+  width: 100%;
+  background-color: white;
+  height: 290px; }
+  .section--4 h2 {
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 44.2px;
+    line-height: 61px;
+    color: #150101;
+    height: 61px;
+    text-align: center; }
+  .section--4 .pruductMenu {
+    text-align: center;
+    position: relative;
+    margin: 0 50px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    width: 1000px; }
+    .section--4 .pruductMenu li {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 21.09px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      color: rgba(0, 0, 0, 0.6);
+      margin: 20px; }
+      .section--4 .pruductMenu li:hover {
+        color: black;
+        border-bottom: 2px solid #d64374; }
+
+.section--5 {
+  width: 100%; }
+
+.textcontent2 {
+  text-align: left; }
+  .textcontent2 h4 {
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 26px;
+    line-height: 35.88px;
+    font-style: normal;
+    color: black;
+    margin: 0;
+    padding: 0; }
+  .textcontent2 p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.7);
+    margin: 0;
+    padding: 0;
+    width: 454px; }
+  .textcontent2 h3 {
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 26px;
+    font-weight: 500;
+    line-height: 35.88px;
+    font-style: normal;
+    color: black; }
+    .textcontent2 h3 del {
+      color: rgba(0, 0, 0, 0.7);
+      font-size: 20px;
+      line-height: 27.6px; }
+  .textcontent2 button {
+    background-color: #d64374;
+    font-size: 16px;
+    color: #fafafa;
+    line-height: 18.75px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-radius: 5px;
+    width: 165px;
+    height: 49px;
+    border: none;
+    outline: none; }
+    .textcontent2 button:hover {
+      background-color: rgba(214, 67, 116, 0.4);
+      color: black; }
+
+.tabcontent {
+  width: 50%;
+  height: 500px; }
+
+.tab-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px; }
+  .tab-head .operations__icon img {
+    width: 59px; }
+  .tab-head .operations__header {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.13px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: black;
+    margin: 0;
+    padding: 0; }
+    .tab-head .operations__header span {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 14.06px;
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      color: rgba(0, 0, 0, 0.7); }
+
+.operations__content {
+  display: none; }
+  .operations__content p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.7);
+    width: 322px;
+    padding: 10px; }
+
+.operations__content--active {
+  display: block; }
+
+.OPER_ {
+  display: flex; }
+
+/* MODAL WINDOW */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 60rem;
+  background-color: #f3f3f3;
+  padding: 5rem 6rem;
+  box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: all 0.5s; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  transition: all 0.5s; }
+
+.modal__header {
+  font-size: 28px;
+  margin-bottom: 4.5rem;
+  line-height: 1.5;
+  font-family: "Hind Madurai", sans-serif; }
+
+.modal__form {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  gap: 2.5rem;
+  font-family: "Hind Madurai", sans-serif; }
+
+.modal__form label {
+  font-size: 1.7rem;
+  font-weight: 500;
+  font-family: "Hind Madurai", sans-serif; }
+
+.modal__form input {
+  font-size: 1.7rem;
+  padding: 1rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-family: "Hind Madurai", sans-serif; }
+
+.modal__form button {
+  grid-column: 1 / span 2;
+  justify-self: center;
+  margin-top: 1rem;
+  font-family: "Hind Madurai", sans-serif; }
+
+.btn--close-modal {
+  font-family: inherit;
+  color: inherit;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  background: none; }
+
+.section {
+  transition: all 2s ease-in-out; }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0; }
+
+.btn {
+  background-color: #d64374;
+  font-size: 16px;
+  color: #fafafa;
+  line-height: 18.75px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  border-radius: 5px;
+  width: 169px;
+  height: 49px;
+  border: none;
+  outline: none; }
+  .btn:hover {
+    background-color: rgba(214, 67, 116, 0.4);
+    color: black; }
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95); }
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem); }
